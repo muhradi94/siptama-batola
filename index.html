@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIPTAMA BATOLA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    
+    /* Skema 2-Tone Header */
+    .bg-2-tone { 
+      background: linear-gradient(160deg, #065f46 0%, #065f46 50%, #0d9488 50%, #0d9488 100%); 
+    }
+    
+    .glass-card { 
+      background: rgba(255, 255, 255, 0.08); 
+      backdrop-filter: blur(12px); 
+      border: 1px solid rgba(255, 255, 255, 0.15); 
+    }
+
+    .wave-container {
+      position: relative;
+      /* Menggunakan 2-tone gradient */
+      background: linear-gradient(to bottom right, #064e3b, #0d9488);
+      padding-top: 1rem;
+      padding-bottom: 9rem;
+      overflow: hidden;
+    }
+
+    /* Dekorasi tambahan untuk efek 2-tone */
+    .wave-container::before {
+      content: "";
+      position: absolute;
+      top: -10%;
+      left: -10%;
+      width: 50%;
+      height: 120%;
+      background: rgba(0, 0, 0, 0.05);
+      transform: rotate(-15deg);
+      pointer-events: none;
+    }
+
+    .wave-svg {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      line-height: 0;
+    }
+
+    .nav-scrolled {
+      background: #064e3b !important;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      padding-top: 0.75rem !important;
+      padding-bottom: 0.75rem !important;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+  <nav id="mainNav" class="fixed top-0 left-0 right-0 z-[100] transition-all duration-500 py-6 px-6">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Kementerian_Agama_new_logo.png" alt="Logo" class="h-10 md:h-12 w-auto">
+        <div class="flex flex-col">
+          <span class="text-white font-extrabold text-xl md:text-2xl tracking-tighter leading-none">SIPTAMA</span>
+          <span class="text-emerald-300 font-bold text-[10px] tracking-[0.3em]">BATOLA</span>
+        </div>
+      </div>
+      <a href="https://wa.me/6287815804629" target="_blank" class="hidden md:flex items-center space-x-2 bg-emerald-400 text-emerald-950 px-5 py-2 rounded-full font-bold text-xs hover:bg-white transition-all shadow-lg">
+        <i class="fab fa-whatsapp"></i>
+        <span>KONTAK ADMIN</span>
+      </a>
+    </div>
+  </nav>
+
+  <header class="wave-container text-white px-6 pt-28">
+    <div class="max-w-5xl mx-auto text-center relative z-10">
+
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-xl tracking-tighter">SIPTAMA BATOLA</h1>
+      <p class="text-[10px] md:text-xs font-bold uppercase tracking-[0.4em] mb-10 opacity-80">
+        Sistem Pelaporan Terpadu RA dan Madrasah SE - Kab. Barito Kuala
+      </p>
+      
+      <div class="glass-card p-6 md:p-10 rounded-[3rem] text-sm md:text-base leading-relaxed max-w-3xl mx-auto font-light shadow-2xl">
+      </span> SIPTAMA BATOLA adalah sistem yang dapat menjadi solusi alternatif dalam pengelolaan laporan bulanan data Raudhatul Athfal dan Madrasah se-Kabupaten Barito Kuala. Sekaligus mendorong percepatan transformasi layanan berbasis digital di Seksi Pendidikan Madrasah Kantor Kementerian Agama Kabupaten Barito Kuala.
+      </div>
+    </div>
+
+    <div class="wave-svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#10b981" fill-opacity="0.2" d="M0,224L48,202.7C96,181,192,139,288,144C384,149,480,203,576,224C672,245,768,235,864,202.7C960,171,1056,117,1152,101.3C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        <path fill="#f9fafb" fill-opacity="1" d="M0,256L48,245.3C96,235,192,213,288,181.3C384,149,480,107,576,117.3C672,128,768,192,864,213.3C960,235,1056,213,1152,181.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 -mt-12 relative z-20 mb-20">
+    <div class="bg-white rounded-[3rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] p-8 md:p-14 border border-white/50">
+      <form id="mainForm" onsubmit="submitForm(event)">
+        
+        <div class="mb-12 p-8 bg-gray-50 rounded-[2.5rem] border border-gray-100 shadow-inner">
+           <div class="text-center mb-6">
+             <h2 class="text-xs font-black text-emerald-800 uppercase tracking-[0.3em]">Otorisasi Madrasah</h2>
+             <div class="h-1 w-12 bg-emerald-500 mx-auto mt-2 rounded-full"></div>
+           </div>
+           <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 max-w-2xl mx-auto">
+             <div class="relative flex-1">
+               <i class="fas fa-fingerprint absolute left-5 top-1/2 -translate-y-1/2 text-emerald-600 opacity-30"></i>
+               <input type="text" name="NSM" id="inputNSM" maxlength="12" placeholder="Masukkan 12 Digit NSM" class="w-full pl-12 pr-6 py-5 rounded-2xl border-2 border-emerald-100 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 outline-none font-bold text-center tracking-widest transition-all">
+             </div>
+             <button type="button" onclick="cekNSM()" class="bg-emerald-700 text-white px-10 py-5 rounded-2xl font-black hover:bg-emerald-900 transition-all shadow-xl active:scale-95 flex items-center justify-center space-x-2">
+               <i class="fas fa-search text-xs"></i>
+               <span>CEK DATA</span>
+             </button>
+           </div>
+        </div>
+
+        <div id="dynamicFields" class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
+           </div>
+
+        <div class="mt-20 pt-12 border-t border-gray-100">
+          <button type="submit" id="btnSubmit" class="hidden w-full bg-emerald-700 text-white font-black py-6 rounded-3xl shadow-2xl hover:bg-emerald-900 hover:-translate-y-2 transition-all duration-300 flex items-center justify-center space-x-4 text-xl tracking-tight">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <span>SUBMIT LAPORAN BULANAN</span>
+          </button>
+          <p class="text-center text-[10px] text-gray-400 mt-6 font-medium italic">Pastikan seluruh data yang diinput sudah sesuai dengan kondisi riil di lapangan.</p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="pb-16 text-center">
+     <div class="flex justify-center items-center space-x-2 text-gray-300 mb-4">
+        <div class="h-[1px] w-8 bg-gray-200"></div>
+        <i class="fas fa-star text-[8px]"></i>
+        <div class="h-[1px] w-8 bg-gray-200"></div>
+     </div>
+     <p class="text-gray-400 text-[10px] font-bold tracking-[0.2em] uppercase px-6 leading-relaxed">
+       Seksi Pendidikan Madrasah<br>Kantor Kementerian Agama Kabupaten Barito Kuala
+     </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    // Logic for Navbar Scroll
+    window.onscroll = function() {
+      const nav = document.getElementById('mainNav');
+      if (window.pageYOffset > 30) {
+        nav.classList.add('nav-scrolled');
+      } else {
+        nav.classList.remove('nav-scrolled');
+      }
+    };
+
+    // Form Generation Logic (Optimized)
+    window.onload = function() { google.script.run.withSuccessHandler(renderForm).getHeaders(); };
+
+    function renderForm(headers) {
+      const container = document.getElementById('dynamicFields');
+      container.innerHTML = '';
+      
+      for (let i = 1; i < headers.length; i++) {
+        const header = headers[i];
+        if(header.toUpperCase() === "NSM") continue;
+
+        const nextHeader = headers[i + 1] || "";
+        const hUpper = header.toUpperCase();
+        const nUpper = nextHeader.toUpperCase();
+
+        if (hUpper.includes("LAKI") && nUpper.includes("PEREMPUAN")) {
+          const mainLabel = hUpper.replace(/LAKI-LAKI|LAKI/g, "").trim() || "Statistik";
+          const rowWrap = document.createElement('div');
+          rowWrap.className = 'col-span-full bg-emerald-50/40 p-8 rounded-[2.5rem] border border-emerald-100/50 relative overflow-hidden group hover:bg-white hover:shadow-xl transition-all duration-500';
+          rowWrap.innerHTML = `
+            <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-100/20 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+            <h3 class="text-[11px] tracking-[0.3em] font-black text-emerald-900 uppercase mb-6 flex items-center">
+              <span class="w-6 h-1 bg-emerald-400 rounded-full mr-3"></span> ${mainLabel}
+            </h3>
+            <div class="grid grid-cols-2 gap-8 relative z-10">
+              <div class="space-y-2">
+                <label class="text-[9px] font-bold text-gray-400 uppercase tracking-widest ml-1">Laki-Laki</label>
+                <div class="relative">
+                  <i class="fas fa-male absolute left-4 top-1/2 -translate-y-1/2 text-blue-500/50"></i>
+                  <input type="text" name="${header}" placeholder="0" required class="w-full pl-10 pr-4 py-4 rounded-2xl border border-gray-200 focus:border-emerald-500 focus:bg-white outline-none transition-all text-sm font-bold shadow-sm">
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label class="text-[9px] font-bold text-gray-400 uppercase tracking-widest ml-1">Perempuan</label>
+                <div class="relative">
+                  <i class="fas fa-female absolute left-4 top-1/2 -translate-y-1/2 text-pink-500/50"></i>
+                  <input type="text" name="${nextHeader}" placeholder="0" required class="w-full pl-10 pr-4 py-4 rounded-2xl border border-gray-200 focus:border-emerald-500 focus:bg-white outline-none transition-all text-sm font-bold shadow-sm">
+                </div>
+              </div>
+            </div>`;
+          container.appendChild(rowWrap);
+          i++;
+        } else {
+          const col = document.createElement('div');
+          const isJurusan = hUpper === "JURUSAN";
+          const isNPSN = hUpper === "NPSN";
+          col.className = isJurusan ? 'col-span-full mt-4' : 'col-span-1 space-y-2';
+
+          if (isJurusan) {
+            col.innerHTML = `
+              <label class="block text-[10px] font-black text-emerald-900 uppercase tracking-widest mb-4">Penyelenggaraan Jurusan</label>
+              <div class="bg-gray-50 border border-gray-100 rounded-[2rem] p-6 flex flex-wrap gap-4">
+                ${['IPA', 'IPS', 'BAHASA', 'AGAMA', 'TIDAK ADA'].map(j => `
+                  <label class="flex items-center space-x-3 cursor-pointer bg-white px-5 py-3 rounded-2xl border border-gray-100 hover:border-emerald-400 transition-all shadow-sm active:scale-95 group">
+                    <input type="checkbox" value="${j}" class="check-jurusan w-5 h-5 text-emerald-600 rounded-lg border-gray-300 focus:ring-emerald-500">
+                    <span class="text-xs font-bold text-gray-600 group-hover:text-emerald-700">${j}</span>
+                  </label>`).join('')}
+              </div>
+              <input type="hidden" name="${header}" id="hiddenJurusan" required>`;
+          } else {
+            col.innerHTML = `
+              <label class="block text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1">${header}</label>
+              <input type="text" name="${header}" placeholder="..." ${isNPSN ? '' : 'required'} class="w-full px-6 py-4 rounded-2xl border border-gray-200 focus:border-emerald-500 focus:shadow-lg focus:shadow-emerald-500/5 outline-none transition-all text-sm font-bold">`;
+          }
+          container.appendChild(col);
+        }
+      }
+      initJurusanListener();
+      document.getElementById('btnSubmit').classList.remove('hidden');
+    }
+
+    function initJurusanListener() {
+      document.querySelectorAll('.check-jurusan').forEach(cb => {
+        cb.addEventListener('change', function() {
+          const isNone = this.value === "Tidak Ada";
+          if (isNone && this.checked) {
+            document.querySelectorAll('.check-jurusan').forEach(o => { if (o.value !== "Tidak Ada") o.checked = false; });
+          } else if (!isNone && this.checked) {
+            document.querySelectorAll('.check-jurusan').forEach(o => { if (o.value === "Tidak Ada") o.checked = false; });
+          }
+          const selected = Array.from(document.querySelectorAll('.check-jurusan:checked')).map(c => c.value).join(', ');
+          document.getElementById('hiddenJurusan').value = selected;
+        });
+      });
+    }
+
+    function cekNSM() {
+      const nsm = document.getElementById('inputNSM').value;
+      if (nsm.length !== 12) return Swal.fire('Otorisasi Gagal', 'NSM harus terdiri dari 12 digit angka.', 'error');
+      Swal.fire({ 
+        title: 'Sinkronisasi Data...', 
+        html: 'Menghubungkan ke server database Seksi Pendidikan Madrasah',
+        allowOutsideClick: false, 
+        didOpen: () => Swal.showLoading() 
+      });
+      google.script.run.withSuccessHandler(function(data) {
+        Swal.close();
+        if (data) {
+          Object.keys(data).forEach(key => {
+            const el = document.querySelector(`[name="${key}"]`);
+            if (el) el.value = data[key];
+            if (key.toUpperCase() === "JURUSAN") {
+              const vals = (data[key] || "").split(', ');
+              document.querySelectorAll('.check-jurusan').forEach(cb => cb.checked = vals.includes(cb.value));
+              document.getElementById('hiddenJurusan').value = data[key];
+            }
+          });
+          Swal.fire({ icon: 'success', title: 'Sinkronisasi Berhasil', text: 'Data madrasah telah dimuat secara otomatis.', timer: 2000 });
+        } else { Swal.fire('Data Tidak Ditemukan', 'Silakan input data baru secara manual.', 'info'); }
+      }).cekDataMadrasah(nsm);
+    }
+
+    function submitForm(e) {
+      e.preventDefault();
+      if (!document.getElementById('hiddenJurusan').value) return Swal.fire('Validasi Gagal', 'Mohon pilih kategori jurusan.', 'warning');
+      const btn = document.getElementById('btnSubmit');
+      btn.disabled = true;
+      btn.innerHTML = `<i class="fas fa-spinner fa-spin mr-3"></i> Mengenkripsi & Mengirim Laporan...`;
+      const formData = {};
+      document.querySelectorAll('#mainForm input').forEach(i => { if (i.name) formData[i.name] = i.value; });
+      google.script.run.withSuccessHandler(function(msg) {
+        Swal.fire({ icon: 'success', title: 'Laporan Diterima', text: msg });
+        document.getElementById('mainForm').reset();
+        document.querySelectorAll('.check-jurusan').forEach(cb => cb.checked = false);
+        btn.disabled = false;
+        btn.innerHTML = `<i class="fas fa-cloud-upload-alt mr-3"></i> SUBMIT LAPORAN BULANAN`;
+      }).prosesFormulir(formData);
+    }
+  </script>
+</body>
+</html>
